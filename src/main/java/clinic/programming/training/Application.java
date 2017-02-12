@@ -25,4 +25,9 @@ public class Application {
     		System.out.println("Greeeting: " + greeting);
     	}
     }
+
+    public int countWords(String words){
+        String[] separateWords = StringUtils.split(words, ' ');
+        return (separateWords == null) ? 0 : separateWords.length;
+    }
 }
